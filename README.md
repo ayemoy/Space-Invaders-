@@ -17,5 +17,4 @@ Game Instructions:
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/82223056/235507921-d85da3f3-c1d8-456d-b07b-b2a710df0a77.png">
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/82223056/235507971-c8c228c0-f15d-4700-8514-365a8aa4fcbd.png">
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/82223056/235508066-ca2fb9b3-bdda-48bd-baf6-eccd90be6d64.png">
-<img width="958" alt="image" src="https://user-images.githubusercontent.com/82223056/235508179-b4dc89ed-36dc-4b83-b64d-a59c732f7f87.png">
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/82223056/235508310-872fa725-c478-4e67-a2e8-c69d4cd0e539.png">
