@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceInvaders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="#"/>
+<!--------------------------------JQUERYYYYYY----------------------------------->
+<!--Google's fonts-->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Abril Fatface|Exo"
+    />
+
+    <!-- jquery for form-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+
+    <link
+    rel="stylesheet"
+    href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+   
+
+    <!--Icons-->
+    <script
+    src="https://kit.fontawesome.com/e211f6a94b.js"
+    crossorigin="anonymous"
+    ></script>
+
+
+<!-----------------------------all css conection to the html----------------------------------------------------->
+
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/welcome.css" />
+    <link rel="stylesheet" href="css/stars.css" />
+    <link rel="stylesheet" href="css/signInUp.css" />
+    <link rel="stylesheet" href="css/gamePage.css" />
+    <link rel="stylesheet" href="css/settings.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/table.css" />
+<!---------------------------------------------------------------------------------->
+
+
+   
+</head>
+
+
+<body>
+<!--------------------------------menu and logo-------------------------------------------------->
+    <header id="header">
+        <div class="logo">
+            <img src="media\logo.png">
+        </div>
+        <div class="names">
+            <h1 id="nams"> AYELET (204687685) & NATALIA (323225409)
+                <br/>
+                SPACE INVADERS
+            </h1>
+    
+        </div>
+        <!-- menu -->
+
+        <!--  -->
+
+        <div class="navbar">
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" id="homeFromGame"  class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#popup" id="aboutFromGame" onclick="openDialog()" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="signFromGame" class="nav-link">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="loginFromGame" class="nav-link">Login</a>
+                    
+                </li>
+            </ul>
+        </div>
+    </header>
+<!---------------------------------------content------------------------------------------->
+
+
+
+
+<div id="content">
+        <!--div welcome page with the sign in & sign up buttons-->
+        <div id="welcomePage" style="display: block;">
+
+<!-- second shipppppppppppp -->
+            <div class="containerR">
+                <div class="cloud">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                 <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+                <div class="cloud">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                 <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+                <div class="cloud">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                 <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+                <div class="cloud">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                 <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+                <div class="trail"></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+               <title>Coasting rocket</title>
+               <g>
+                <path fill="#d9d9d9" fill-rule="evenodd" stroke="#000000" stroke-width="10" stroke-linejoin="round" id="path663" d="m17.80632,31.099018c78.857002,1.695702 278.117996,33.916607 354.430984,229.786694c-26.28598,5.088013 -90.72699,67.834015 -100.901978,102.598022c-194.174004,-99.206024 -249.289406,-256.072014 -253.529007,-332.384716z"/>
+                <path fill="rgb(255, 0, 149)" fill-rule="evenodd" stroke="#000000" stroke-width="10" stroke-linejoin="round" id="path664" d="m163.649323,292.258728c0,0 3.390991,86.488007 3.390991,87.335999c0,0.847992 104.295013,48.332001 110.230011,50.876007l-5.087006,-67.834015c-9.326996,0.847992 -92.423996,-52.570984 -108.533997,-70.377991z"/>
+                <path fill="rgb(255, 0, 149)" fill-rule="evenodd" stroke="#000000" stroke-width="10" stroke-linejoin="round" id="path665" d="m304.73349,151.352798c0,0 85.530975,3.820038 86.378693,3.840881c0.847748,0.020828 45.754395,105.451248 48.151794,111.446976l-67.688538,-6.752472c-9.098633,-33.045578 -46.892822,-88.600128 -66.841949,-108.535385z"/>
+                <path fill="#bfbfbf" fill-rule="evenodd" stroke="#000000" stroke-width="10" stroke-linejoin="round" id="path666" d="m235.316772,210.169052c0,0 14.259979,34.122604 16.66716,39.685852c2.953842,3.748337 77.589035,64.656357 83.067612,68.074173l-3.178864,-21.680725c-7.994232,-7.698639 -76.803391,-68.015976 -96.555908,-86.0793z"/>
+                <path fill="rgb(250, 203, 227)" fill-rule="evenodd" stroke="#000000" stroke-width="10" stroke-linejoin="round" id="path667" d="m232.636536,209.39949l-16.768509,24.280228l118.644791,101.733917l25.753967,22.744385l17.387604,-24.545471l-109.991364,-96.240036l-35.026489,-27.973022z"/>
+                <path fill="#bfbfbf" fill-rule="evenodd" stroke="#000000" stroke-width="12.5" stroke-linejoin="round" id="path668" d="m124.644997,131.154007c-28.829796,39.003998 30.52401,87.335999 58.506004,52.570999c33.916992,-42.396011 -24.589005,-83.096008 -58.506004,-52.570999z"/>
+                <path fill="#aeffff" fill-rule="evenodd" stroke="#000000" stroke-width="10" stroke-linejoin="round" id="path669" d="m132.276001,135.393005c21.197998,-20.350006 70.376999,4.23999 48.332001,40.700989c-24.589996,31.372009 -74.617004,-8.478989 -48.332001,-40.700989z"/>
+                <path fill="#ffffff" fill-opacity="0.75" fill-rule="evenodd" stroke-width="12.5" stroke-linejoin="round" id="path670" d="m148.386002,134.501999c-6.860886,4.737549 -24.900513,19.623886 -10.175003,37.352005c12.718994,3.391998 30.524994,-35.656006 10.175003,-37.352005z"/>
+                <title>Layer 1</title>
+                <line id="svg_1" y2="246.999998" x2="273" y1="266.999999" x1="257" stroke-linecap="null" stroke-linejoin="round" stroke-width="10" stroke="#000000" fill="none"/>
+               </g>
+              </svg>
+              </div>
+              
+
+
+            <div class="buttons">
+                <button id="signUpButton" cursor="pointer" onclick="fromWelcomeToSignup()" class="btn btn1" onclick="">
+                    Sign Up
+                  </button>
+                  <button id="LoginButton" onclick="fromWelcomeToLogin()" class="btn btn2" onclick="">
+                    Login
+                  </button>
+            </div>
+
+
+
+        
+            
+        </div>
+
+
+
+        
+        <!---------------------------------------------------->
+
+
+        <!------------------------div of the sign up form---------------------------------------------------------------------->
+      
+        <div id="signUpForm" style="display: none;"> 
+            <div class="signContainer"> 
+                <h2 class="form-title"> Sign Up</h2>
+                <form id="signForm" action="#" > 
+                    <div class="main-user-info">
+
+                        <div class="user-input-box">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+                        </div>
+    
+                        <div class="user-input-box">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="UserName">User name</label>
+                            <input type="text" id="UserName" name="UserName" placeholder="Enter username"> 
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Enter email">
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="Password">Password</label>
+                            <input type="password" id="Password" name="Password" placeholder="Enter password">
+                        </div>
+    
+                        <div class="user-input-box">
+                            <label for="ConfirmPassword">Confirm Password</label>
+                            <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm password">
+                        </div>
+    
+    
+                        <div class="user-input-box">
+                            <label for="birthday">Birth Date</label>
+                            <input type="text" id="birthday" name="birthday" placeholder="Enter date">
+                            <script>
+                                $(function () {
+                                    $("#birthday").datepicker();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit-btn">
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+        <!----------------------------------------------------------->
+
+        <!-- ------------------------------div of login------------------------------------------------------------------->
+        <div id="loginForm" style="display:none;"> 
+            <div class="signContainer"> 
+
+                <!-- <button class="close-btn">B</button> -->
+
+                <h2 class="form-title"> Login</h2>
+                <!-- <form id="signForm" action="#" >  -->
+                <form id="loginForm" action="#" > 
+                    <div class="main-user-info">
+
+                        <div class="user-input-box">
+                            <label for="UserName">User name</label>
+                            <input type="text" id="loginUserName" placeholder="Enter username" required> 
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="Password">Password</label>
+                            <input type="password" id="loginPassword" placeholder="Enter password" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit-btn">
+                        <input id="loginSubmmition" type="submit" value="Login" onclick="submitLogin()">
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- ------------------------------------------------------ -->
+        <div id="settingsDiv" style="display: none;">
+
+            <div id="faq">
+                <h4 id="titleAccordion">Settings</h4>
+                <!-- <h1>Settings</h1> -->
+                <ul>
+                  <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h5>Keyboard</h5>
+                    <p>
+                        <label>Shoots key:</label>
+                        <input type="text" id="shoot" class="kbrd" maxlength="1" pattern="[A-Za-z\s]" value="Only Letters"/>
+                    </p>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h5>Time</h5>
+                    <p>
+                        <label>Minutes:</label>
+                        <input type="number" class="timeSettings" maxlength="1" id="minutes" min="2" max="9" value="2" />
+                    </p>
+                  </li>
+                  <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h5>Sound</h5>
+                    <p>
+                        Volume:
+                        
+                        <input type="range" min="0" max="100" value="50" class="soundSlider" id="soundValue"/>
+                        <span id="volumeValue"></span>
+                        <!-- <input type="checkbox" id="soundOff" name="soundOff" value="Sound off" /> -->
+                        <!-- <label id="lblOff" for="soundOff">Sound Off</label><br /> -->
+                    </p>
+                  </li>
+
+                  <li>
+                    <input type="checkbox" checked>
+                    <i></i>
+                    <h5>Choose Player</h5>
+                    <p >
+                        <img src="media\player1.png" class="players" alt="1" role="button" width="5" height="5" onclick="choosePlayer(this)">
+                        <img src="media\player2.png" class="players" alt="2" role="button" width="5" height="5" onclick="choosePlayer(this)">
+                        <img src="media\player3.png" class="players" alt="3" role="button" width="5" height="5" onclick="choosePlayer(this)">
+                        <img src="media\player4.png" class="players" alt="4" role="button" width="5" height="5" onclick="choosePlayer(this)">
+                        <img src="media\player7.png" class="players" alt="7" role="button" width="5" height="5" onclick="choosePlayer(this)">
+
+                    </p>
+                  </li>
+                </ul>
+                <br>
+                <br>
+                <button id="newGameSett" class="glow-on-hover" type="button" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-size: 25px;">START GAME</button>
+              </div>
+          
+        </div>
+
+
+
+
+
+
+
+        <!------------------------------div on game canvas----------------------------------------->
+
+        <div id="gameDiv" style="display: none;">
+            <div id="gameInfoContainer">
+                <ul id="infolist">
+                    <li>
+                        <label for="lblUser">USER:</label>
+                        <br><br>
+                        <input id="lblUser" type="text" class="gameLbl" />
+
+                    </li>
+                    <br>
+                    
+                    <li>
+                        <label for="lblScore">SCORE:</label>
+                        <br><br>
+                        <input id="lblScore" type="text" class="gameLbl" />
+                        
+                    </li>
+                    <br>
+                
+                    <li>
+                        <label for="lblTime">SECONDS:</label>
+                        <br><br>
+                        <input id="lblTime" type="text" class="gameLbl" /> 
+                    </li>
+                    <br>
+                    
+                    <li>
+                        <label for="lblLife">LIVES:</label>
+                        <br><br>
+                    <input id="lblLife" type="text" class="gameLbl" />
+                    </li>
+                    <br>
+                    
+                    
+                    <!-- new game and music buttons  -->
+                    <li>
+                        <button class="glow-on" id="NGM" > NEW GAME</button>
+                        <!-- <script>
+                            function refreshPage(){
+                                window.location.reload();
+                            } 
+                        </script> -->
+                    </li>
+                    <br>
+                    <br>
+                   
+                    <li>
+                        <h3> SOUND</h3>
+                        <a href="#" class="speaker">
+                            <span></span>
+                        </a>
+
+                    </li>
+
+                </ul>
+                      
+            </div>
+            <!-- <span>Player Lives Left:</span> 
+            <span id="LivesText"> </span>
+                 -->
+            <canvas id="gameCanvas" > </canvas>
+                
+   
+        </div>
+        <!---------------------------------- The about Modal -------------------------------------------------------------------->
+        <!-- <button onclick="window.dialog.showModal();">Show Notification</button> -->
+        
+        <dialog id="dialog"  >
+                <!-- <a class="button" href="#popup">Open Modal</a> -->
+                <div class="popup" id="popup">
+                  <div class="popup-inner">
+                    <div class="popup__photo">
+                      <img src="media\player1.png" alt="">
+                      <!-- <img src="media\enemy4.png" alt=""> -->
+                    </div>
+                    <div class="popup__text">
+                      <h1>ABOUT US</h1>
+                      <p>We are Natalia Kataev and Ayelet Moyal.
+                        We built a Space Invaders game using HTML, Jquery, Java Script and CSS.
+                        The difficulties we encountered are:
+                        <br>
+                        1. Switching between divs - We had a hard time implementing the functionality of switching between each of the different screens in the game.
+                        <br>
+                        2. Implementing the functionality of the game - it was difficult to arrange the entire game according to the instructions given to us, for example, accelerating the enemies and their bullets every 5 seconds.
+                        <br>
+                        Game Instructions:
+                        <br>
+                        You have to shoot at the enemy spaceships and try to kill them all before the time runs out, you can use the arrow keys on the keyboard to move and you can choose the button used to shoot.
+                        On the game screen there is a timer that shows the remaining time until the end of the game, the minimum is two minutes, but you can set a longer time on the settings screen.
+                        <br>
+                        <h1>Enjoy the game!</h1>    
+                    </p>
+                    </div>
+                    <a class="popup__close" href="#">X</a>
+                  </div>
+                </div>
+        </dialog>
+
+
+        <!-- kkkk -->
+<!-- ------------------------------------------high score table--------------------------------------------------------------------------------------- -->
+        <div id="EndGame" style="display: none;"  >
+            <form id="EndGameForm">
+            <div class="patterns" id="EndGameInDiv">
+
+                <p id="WinloseTxt"></p>
+                <h4 id="titleAccordion">Scores Table</h4>
+                <div class="table-wrapper">
+                    <table class="fl-table">
+
+                        <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>UserName</th>
+                            <th>Score</th>
+                            <th>Date</th>
+                            <!-- <th>Header 5</th> -->
+                        </tr>
+                        </thead>
+                        <tbody>
+                    
+                        <tbody>
+                    </table>
+                    
+                </div>
+                <button class="glow-on-hover" id="newGameButton" type="button" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-size: 25px;">NEW GAME</button>
+            </div>
+            </form>
+
+
+        </div>
+
+
+
+
+<!-- ======================================================================= -->
+
+    </div> <!--div content closer-->
+    <!--------------------------------content closer----------------------------------------------------------------->
+
+
+<!-----------------------------------draw the move backgroung stars--------------------------------------------------->
+
+
+
+    <div id="starfield"></div>
+    <div id="starsContainer">
+    <canvas id="starsCanvas"></canvas>
+    </div>
+    
+    <script src="js/starfield.js"></script>
+    <script>
+
+        //  Create the starfield.
+        var container1 = document.getElementById('starfield');
+        var starfield = new Starfield();
+        starfield.initialise(container1);
+        starfield.start();
+ 
+    </script>
+<!---------------------------------------------------------------------------------->
+
+
+
+<!----------------------------------footer+share+contact us------------------------------------------------>
+
+    <footer id="footer">
+        <div class="footer-content" >
+            <ul class="socials"> 
+                Share:  <li class="liFooter"> <a href="https://www.facebook.com/sharer/sharer.php?u=https://web-development-environments-2023.github.io/assignment2-204687685_323225409/"><i class="fa fa-facebook"></i></a></li>
+                <li > <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://web-development-environments-2023.github.io/assignment2-204687685_323225409/"><i class="fa fa-linkedin"></i></a></li>
+                <li> <a href="https://twitter.com/intent/tweet?text=Awesome%20Blog!&url=https://web-development-environments-2023.github.io/assignment2-204687685_323225409/"><i class="fa fa-twitter"></i></a></li>
+                <li >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:ayelem@post.bgu.ac.il">Contact Us: &nbsp; <i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+
+        
+    </footer>
+<!-------------------------------all javascript connections to the html--------------------------------------------------->
+    
+    
+    
+            <!-- javascript files -->
+    <script type="text/javascript" src="./js/hamburger.js"></script>
+    <script type="text/javascript" src="./js/welcome.js"></script>
+    <script type="module" src="./js/spaceinvaders.js"></script>
+    <script type="module" src="./js/EnemyController.js"></script> 
+    <script type="module" src="./js/Enemy.js"></script> 
+    <script type="text/javascript" src="./js/signUp.js"></script> 
+    <script type="text/javascript" src="./js/login.js"></script> 
+    <script type="text/javascript" src="./js/settings.js"></script> 
+    <script type="text/javascript" src="./js/about.js"></script> 
+
+<!---------------------------------------------------------------------------------->
+
+</body>
+
+</html>

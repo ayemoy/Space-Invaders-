@@ -1,0 +1,59 @@
+/* Styling needed for a fullscreen canvas and no scrollbars. */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+html { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+
+body{
+    align-items: center;
+    text-align: center;
+    /* position: absolute; */
+    /* display: flex; */
+    justify-content: center;
+    min-height: 100vh;
+    /*max-height: fit-content;*/
+
+    /*we add this maybe delete???????????*/
+    flex-direction: column; 
+    padding: 0px;
+    margin: 0px;
+
+    
+    
+}
+    
+
+    #starfield {
+        width:100%;
+        height:100%;
+        z-index: -1;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    #starsContainer{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+  
+    #starsCanvas { 
+        width: 800px;
+        height: 600px;
+    }
+  
